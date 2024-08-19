@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource2">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=seminar-sql;Initial Catalog=ASYas</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>caba2453-ebeb-4275-b88d-b121376ca0a9</DataSourceID>
+</RptDataSource>

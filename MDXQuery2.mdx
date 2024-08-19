@@ -1,0 +1,33 @@
+
+--1
+select filter([Dim Company].[Name Comp].members,[Measures].[Cost]>100) on rows,
+[Measures].[Cost] on columns
+from [Car Dwh Yas]
+
+
+--2
+select topcount([Dim Company].[Name Comp].members,2,[Measures].[Cost]) on rows,
+[Measures].[Cost] on columns
+from [Car Dwh Yas]
+
+
+--3
+select order([Dim Company].[Name Comp].members,[Measures].[Cost],desc) on rows,
+[Measures].[Cost] on columns
+from [Car Dwh Yas]
+
+--4
+select descendants([Dim Date].[Hierarchy].[Year])  on rows,
+[Dim Car].[Car Id] on columns
+from [Car Dwh Yas]
+
+--5
+select [Dim Company].[Name Comp].members on rows,
+[Dim Car].[Car Id] on columns
+from [Car Dwh Yas]
+where [Measures].[Cost]
+
+--6
+select [Dim Date].[Month] .children on rows,
+[Dim Company].[Name Comp].children on columns
+from [Car Dwh Yas]
